@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- このファイルはHTML5で書かれている -->
+
+<html lang="ja">
+<head>
+  <!-- 日本語の文字化けを防ぐ -->
+  <meta charset="UTF-8">
+
+  <!-- スマホでも見やすくする -->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <!-- ブラウザのタブに表示される名前 -->
+  <title>私設科学誌 | Independent Science Journal</title>
+
+  <!-- CSS：サイトの見た目を決める -->
+  <style>
+    /* ページ全体 */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f4f6f5;
+      color: #253432;
+      line-height: 1.8;
+    }
+
+    /* 上部のタイトル部分 */
+    header {
+      background-color: #183b36;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 10px 0;
+    }
+
+    /* 英語のサブタイトル */
+    .subtitle {
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: #b9d5cc;
+    }
+
+    /* メニューのリンク */
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+    }
+
+    /* ページの本文 */
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    /* 各セクション */
+    section {
+      margin-bottom: 35px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #2d7465;
+      padding-bottom: 8px;
+    }
+
+    /* 研究紹介のカード */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      border: 1px solid #dce5e1;
+    }
+
+    /* 最下部 */
+    footer {
+      background-color: #183b36;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- サイトの一番上 -->
+  <header>
+    <p class="subtitle">INDEPENDENT SCIENCE JOURNAL</p>
+    <h1>私設科学誌</h1>
+    <p>未知を探り、過程を記し、知を残す。</p>
+
+    <!-- ページ内のメニュー -->
+    <nav>
+      <a href="#about">概要</a>
+      <a href="#research">研究</a>
+      <a href="#archive">記録</a>
+    </nav>
+  </header>
+
+  <!-- メインの内容 -->
+  <main>
+
+    <section id="about">
+      <h2>このサイトについて</h2>
+      <p>
+        私設科学誌は、個人による科学研究や
+        実験、装置開発の過程と成果を記録するサイトです。
+        分野を越えた探究と、研究情報の公開を目指します。
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>研究分野</h2>
+
+      <div class="card">
+        <h3>有機化学・計算化学</h3>
+        <p>有機合成、反応機構、計算化学の学習と研究。</p>
+      </div>
+
+      <div class="card">
+        <h3>鉱物・地質学</h3>
+        <p>鉱物標本の観察、分析、地質調査の記録。</p>
+      </div>
+
+      <div class="card">
+        <h3>科学工作・装置開発</h3>
+        <p>測定装置や実験装置の製作と性能評価。</p>
+      </div>
+    </section>
+
+    <section id="archive">
+      <h2>研究記録</h2>
+      <p>
+        研究レポート、実験データ、設計資料などを
+        順次公開していく予定です。
+      </p>
+    </section>
+
+  </main>
+
+  <!-- サイトの最下部 -->
+  <footer>
+    <p>© 2026 私設科学誌</p>
+  </footer>
+
+</body>
+</html>
+  

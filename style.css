@@ -1,1 +1,204 @@
+/* ===== サイト全体 ===== */
+
+body {
+  margin: 0;
+  /* ページ外周の標準余白をなくす */
+
+  font-family: "Noto Sans JP", sans-serif;
+  /* 文字のフォントを指定 */
+  /* 前者がなければ後者の標準ゴシック体を使う */
+
+  background: #fafaf8;
+  /* 背景色。少し温かみのある白 */
+
+  color: #252525;
+  /* 基本の文字色。黒に近い灰色 */
+}
+
+
+/* ===== ヘッダー全体 ===== */
+
+.site-header {
+  position: sticky;
+  /* スクロールしても指定位置に留まる */
+
+  top: 0;
+  /* 画面上端から0pxの位置に留まる */
+
+  z-index: 100;
+  /* 他の普通の要素より手前に表示する */
+
+  background: #ffffff;
+  /* ヘッダーの背景を白にする */
+
+  border-bottom: 1px solid #e5e5e5;
+  /* 下側に薄い灰色の線を1px引く */
+}
+
+
+/* ===== ヘッダー内の配置 ===== */
+
+.header-inner {
+  max-width: 1200px;
+  /* 横幅の上限を1200pxにする */
+
+  margin: auto;
+  /* 左右の余白を自動調整して中央寄せ */
+
+  padding: 18px 28px;
+  /* 内側の余白：上下18px、左右28px */
+
+  display: flex;
+  /* 中の要素を横並びにする */
+
+  justify-content: space-between;
+  /* 要素を左右の端へ振り分ける */
+
+  align-items: center;
+  /* 要素を縦方向の中央に揃える */
+
+  gap: 24px;
+  /* 要素同士の間隔を最低24px確保 */
+}
+
+
+/* ===== サイト名 ===== */
+
+.site-brand {
+  display: flex;
+  /* 内部の要素を並べる仕組み */
+
+  flex-direction: column;
+  /* 横並びではなく縦並びにする */
+
+  text-decoration: none;
+  /* リンクの下線を消す */
+
+  color: inherit;
+  /* 親要素の文字色を引き継ぐ */
+}
+
+
+/* ===== 日本語のサイト名 ===== */
+
+.brand-ja {
+  font-size: 23px;
+  /* 文字サイズ */
+
+  font-weight: 600;
+  /* 文字の太さ。やや太字 */
+
+  letter-spacing: 0.08em;
+  /* 文字同士の間隔を少し広くする */
+}
+
+
+/* ===== 英語のサイト名 ===== */
+
+.brand-en {
+  font-size: 11px;
+  /* 日本語名より小さくする */
+
+  color: #777;
+  /* 控えめな灰色 */
+
+  letter-spacing: 0.05em;
+  /* 文字間隔を少し広げる */
+}
+
+
+/* ===== メニュー ===== */
+
+.site-nav {
+  display: flex;
+  /* メニューを横並びにする */
+
+  gap: 28px;
+  /* メニュー項目同士の間隔 */
+
+  flex-wrap: wrap;
+  /* 幅が足りなければ折り返す */
+}
+
+
+/* ===== メニュー内のリンク ===== */
+
+.site-nav a {
+  color: #444;
+  /* リンクの文字色 */
+
+  font-size: 14px;
+  /* リンクの文字サイズ */
+
+  text-decoration: none;
+  /* リンクの下線を消す */
+
+  transition: color 0.2s;
+  /* 色の変化を0.2秒かけて滑らかに */
+}
+
+
+/* ===== マウスを乗せたとき ===== */
+
+.site-nav a:hover {
+  color: #a16c43;
+  /* 茶色に変化させる */
+}
+
+
+/* ===== キーボード操作時 ===== */
+
+.site-nav a:focus-visible,
+.site-brand:focus-visible {
+  outline: 2px solid #a16c43;
+  /* 選択中のリンクを枠線で示す */
+
+  outline-offset: 4px;
+  /* 枠線を要素から4px離す */
+}
+
+
+/* ===== メイン部分（仮） ===== */
+
+main {
+  max-width: 1200px;
+  /* コンテンツの横幅上限 */
+
+  margin: auto;
+  /* 中央寄せ */
+
+  padding: 40px 28px;
+  /* 内側の余白 */
+}
+
+main section {
+  min-height: 200px;
+  /* 各セクションの最低の高さ */
+
+  scroll-margin-top: 120px;
+  /* 移動先がヘッダーに隠れないよう余白を取る */
+}
+
+
+/* ===== スマートフォンへの対応 ===== */
+
+@media (max-width: 700px) {
+  /* 画面幅が700px以下のときだけ適用 */
+
+  .header-inner {
+    flex-direction: column;
+    /* 横並びを縦並びに変更 */
+
+    align-items: flex-start;
+    /* 左端に揃える */
+
+    padding: 14px 20px;
+    /* スマホ向けに余白を調整 */
+  }
+
+  .site-nav {
+    gap: 20px;
+    /* メニュー間隔を狭くする */
+  }
+}
 

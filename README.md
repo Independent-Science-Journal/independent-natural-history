@@ -1,2 +1,2 @@
-# indie-science-journal.github.io
-私設科学誌 | Independent Science Journal
+# indie-natural-history
+私設博物誌 | Independent Natural History

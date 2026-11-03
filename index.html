@@ -15,13 +15,6 @@
   <script src="data.js" defer></script>
   <script src="app.js" defer></script>
 </head>
-<section class="inh-hero" aria-label="私設博物誌の活動写真" >
-  <img src="./images/top/hero1.jpg" class="active" alt="活動写真1">
-  <img src="./images/top/hero2.jpg" alt="活動写真2">
-  <img src="./images/top/hero3.jpg" alt="活動写真3">
-  <img src="./images/top/hero4.jpg" alt="活動写真4">
-  
-  </section>
 
 <body>
   <header class="site-header">
@@ -38,6 +31,28 @@
       </nav>
     </div>
   </header>
+  
+<section class="inh-hero">
+  <img src="./images/トップ/hero1.jpg" class="active" alt="写真1">
+  <img src="./images/トップ/hero2.jpg" alt="写真2">
+  <img src="./images/トップ/hero3.jpg" alt="写真3">
+</section>
+
+<script>
+(() => {
+  const slides = document.querySelectorAll(".inh-hero img");
+  if (slides.length < 2) return;
+
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }, 6000);
+})();
+</script>
+
   <main id="app">
     <section id="collections">
       <h2>蒐集</h2>
@@ -64,26 +79,6 @@
 
   </main>
  
-<section class="inh-hero">
-  <img src="./images/top/hero1.jpg" class="active" alt="写真1">
-  <img src="./images/top/hero2.jpg" alt="写真2">
-  <img src="./images/top/hero3.jpg" alt="写真3">
-</section>
-
-<script>
-(() => {
-  const slides = document.querySelectorAll(".inh-hero img");
-  if (slides.length < 2) return;
-
-  let current = 0;
-
-  setInterval(() => {
-    slides[current].classList.remove("active");
-    current = (current + 1) % slides.length;
-    slides[current].classList.add("active");
-  }, 6000);
-})();
-</script>
  
 </body>
 </html>

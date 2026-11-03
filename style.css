@@ -201,4 +201,37 @@ main section {
     /* メニュー間隔を狭くする */
   }
 }
+:root {
+  --page-bg: #F8F5EE;  /* 背景 */
+  --surface: #FFFEFB;  /* ヘッダー */
+  --ink: #302B24;      /* 文字 */
+  --muted: #6A6257;    /* 補助文字 */
+  --accent: #776044;   /* 強調色 */
+  --line: #E2D9CA;     /* 境界線 */
+}
 
+body{
+  background: var(--page-bg);
+  color: var(--ink);
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-en {
+  color: var(--muted);
+}
+
+.site-nav a {
+  color: var(--ink);
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+main a {
+  color: var(--accent);
+}

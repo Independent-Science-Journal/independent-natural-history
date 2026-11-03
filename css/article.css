@@ -1,1 +1,102 @@
 
+/* =================================
+   記事ページ専用デザイン
+   ================================= */
+
+/* 記事全体の横幅 */
+.article-page {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+/* 共通CSSのセクション最低高さを解除 */
+.article-page section {
+  min-height: 0;
+  margin-top: 40px;
+}
+
+/* 記事タイトル */
+.article-page h1 {
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/* 英語タイトル */
+.article-subtitle {
+  color: #777;
+  font-size: 15px;
+}
+
+/* 公開日・分類など */
+.article-meta {
+  font-size: 13px;
+  color: #777;
+  margin: 24px 0;
+}
+
+/* 本文 */
+.article-page p {
+  line-height: 1.9;
+}
+
+/* 章の見出し */
+.article-page h2 {
+  font-size: 22px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* 動画 */
+.article-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #111;
+  border-radius: 8px;
+}
+
+/* 動画・画像の説明 */
+.article-caption {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* 計算条件の表 */
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.article-table th,
+.article-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.article-table th {
+  width: 40%;
+}
+
+/* 記事末尾の注意事項 */
+.article-notice {
+  border-left: 3px solid #a16c43;
+  padding: 12px 16px;
+  background: #f1efea;
+  margin-top: 48px;
+}
+
+/* スマホ表示 */
+@media (max-width: 700px) {
+  .article-page {
+    padding: 28px 20px 60px;
+  }
+
+  .article-page h2 {
+    font-size: 19px;
+  }
+}
+

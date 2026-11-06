@@ -1,1 +1,173 @@
 
+/* ===== 2層目の基本配置 ===== */
+
+.catalog-page {
+  max-width: 1080px; /* ページの最大横幅 */
+  margin: 0 auto;    /* 中央に配置 */
+  padding: 36px 24px 80px;
+}
+
+/* 以前の共通CSSの最低高さ200pxを解除 */
+.catalog-page section {
+  min-height: 0;
+  scroll-margin-top: 140px;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 36px;
+}
+
+/* ページの紹介 */
+.catalog-intro {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.catalog-intro h1 {
+  font-size: 36px;
+  margin: 0 0 8px;
+}
+
+.catalog-intro p {
+  line-height: 1.8;
+}
+
+/* 英語の副題 */
+.catalog-english {
+  color: var(--accent);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+
+/* 各分野のまとまり */
+.catalog-section {
+  margin-top: 42px;
+}
+
+.catalog-section h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+/* ===== 分野への案内 ===== */
+
+.topic-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.topic-links a {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px 18px;
+  text-decoration: none;
+}
+
+.topic-links a:hover {
+  background: #EEE6D8;
+}
+
+/* ===== 記事カード ===== */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* カード本体 */
+.record-card {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* マウスを乗せたとき */
+a.record-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px #302B2414;
+}
+
+/* キーボード操作時 */
+a.record-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* 見出し画像の表示場所 */
+.card-image {
+  aspect-ratio: 16 / 9;
+  background: #E8DFCF;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+/* 画像を枠いっぱいに表示 */
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* まだ画像がないときの文字 */
+.image-placeholder {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* カード内の文章 */
+.card-content {
+  padding: 20px;
+}
+
+.card-category {
+  color: var(--accent);
+  font-size: 12px;
+  margin: 0 0 8px;
+}
+
+.card-content h3 {
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.card-more {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* 資料がない分野の表示 */
+.empty-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* 画面が700px以下なら1列 */
+@media (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-intro h1 {
+    font-size: 30px;
+  }
+}

@@ -6,5 +6,140 @@
   初めての分子動力学シミュレーション
 </a>
 
-  <p>計算化学 / PC性能試験</p>
+  
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>記録 | 私設博物誌</title>
+
+  <!-- サイト全体のデザイン -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- 2層目専用のデザイン -->
+  <link rel="stylesheet" href="../css/section.css">
+</head>
+
+<body>
+
+  <!-- ===== 共通ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a href="../index.html" class="site-brand">
+        <span class="brand-ja">私設博物誌</span>
+        <span class="brand-en">Independent Natural History</span>
+      </a>
+
+      <nav class="site-nav" aria-label="メインメニュー">
+        <a href="../collections/">蒐集</a>
+        <a href="../records/">記録</a>
+        <a href="../instruments/">装置</a>
+        <a href="../index.html#souvenirs">おみやげ</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ===== 記録ページ ===== -->
+  <main class="catalog-page">
+
+    <!-- 現在地の表示 -->
+    <nav class="breadcrumb" aria-label="現在位置">
+      <a href="../index.html">トップ</a> / 記録
+    </nav>
+
+    <!-- ページ紹介 -->
+    <div class="catalog-intro">
+      <h1>記録</h1>
+      <p class="catalog-english">Records & Observations</p>
+      <p>
+        実験、調査、観察、計算など、
+        個人で行った活動の記録を公開しています。
+      </p>
+    </div>
+
+    <!-- 分野への案内 -->
+    <section class="catalog-section">
+      <h2>分野から探す</h2>
+
+      <nav class="topic-links" aria-label="記録の分野">
+        <a href="#computational">計算化学</a>
+        <a href="#geology">鉱物・地質</a>
+        <a href="#nature">自然観察</a>
+      </nav>
+    </section>
+
+    <!-- ===== 計算化学 ===== -->
+    <section id="computational" class="catalog-section">
+      <h2>計算化学 / Computational Chemistry</h2>
+
+      <div class="card-grid">
+
+        <!-- 第1号記事のカード -->
+        <a class="record-card"
+           href="./computational-chemistry/first-md.html">
+
+          <!-- 記事の見出し画像 -->
+          <div class="card-image">
+
+            <!-- 画像を用意するまでは仮表示 -->
+            <span class="image-placeholder">画像準備中</span>
+
+            <!-- 画像を用意したらspanを消し、
+                 下のimgタグを有効にする -->
+            <!--
+            <img
+              src="../images/records/first-md-cover.webp"
+              alt="NaCl微小クラスターの可視化画像"
+              loading="lazy">
+            -->
+
+          </div>
+
+          <!-- 記事の紹介文 -->
+          <div class="card-content">
+            <p class="card-category">
+              計算化学 / 動作試験
+            </p>
+
+            <h3>
+              初めての分子動力学シミュレーション
+            </h3>
+
+            <p>
+              NaCl微小クラスターを用いた
+              PC性能試験と、OpenMMによる
+              分子動力学計算の記録。
+            </p>
+
+            <span class="card-more">記事を読む →</span>
+          </div>
+
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ===== 鉱物・地質 ===== -->
+    <section id="geology" class="catalog-section">
+      <h2>鉱物・地質 / Mineralogy & Geology</h2>
+      <p class="empty-note">現在、公開資料を準備しています。</p>
+    </section>
+
+    <!-- ===== 自然観察 ===== -->
+    <section id="nature" class="catalog-section">
+      <h2>自然観察 / Nature Observation</h2>
+      <p class="empty-note">現在、公開資料を準備しています。</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
+
 </section>

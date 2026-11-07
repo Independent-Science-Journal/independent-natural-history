@@ -201,10 +201,6 @@ body{
   color: var(--ink);
 }
 
-.site-header {
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
-}
 
 .brand-en {
   color: var(--muted);

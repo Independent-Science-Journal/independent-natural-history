@@ -9,22 +9,17 @@ body {
 
 /* ===== ヘッダー全体 ===== */
 
+
 .site-header {
-  position: sticky;
-  /* スクロールしても指定位置に留まる */
+  position: sticky; /* スクロール時も固定 */
+  top: 0;           /* 画面上端に配置 */
+  z-index: 100;     /* 他の要素より手前 */
 
-  top: 0;
-  /* 画面上端から0pxの位置に留まる */
-
-  z-index: 100;
-  /* 他の普通の要素より手前に表示する */
-
-  background: #ffffff;
-  /* ヘッダーの背景を白にする */
-
-  border-bottom: 1px solid #e5e5e5;
-  /* 下側に薄い灰色の線を1px引く */
+  /* サイト共通の色を使用 */
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
 }
+
 
 
 /* ===== ヘッダー内の配置 ===== */

@@ -179,9 +179,14 @@ body{
 }
 
 
+
+/* ===== 英語のサイト名 ===== */
 .brand-en {
-  color: var(--muted);
+  font-size: 11px;          /* 文字サイズ */
+  color: var(--muted);     /* 補助文字色 */
+  letter-spacing: 0.05em;  /* 文字同士の間隔 */
 }
+
 
 main a {
   color: var(--accent);

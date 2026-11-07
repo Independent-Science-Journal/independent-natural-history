@@ -1,1 +1,116 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <!-- ページのタイトル -->
+  <title>写真帖 | 私設博物誌</title>
+
+  <!-- サイト共通のデザイン -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- 写真帖専用のデザイン -->
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a href="../index.html" class="site-brand">
+        <span class="brand-ja">私設博物誌</span>
+        <span class="brand-en">
+          Independent Natural History
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="メインメニュー">
+        <a href="../collections/">蒐集</a>
+        <a href="../records/">記録</a>
+        <a href="../instruments/">装置</a>
+        <a href="./" aria-current="page">写真帖</a>
+        <a href="../index.html#souvenirs">おみやげ</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ===== 写真帖 ===== -->
+  <main class="gallery-page">
+
+    <!-- パンくずリスト -->
+    <nav class="breadcrumb" aria-label="現在位置">
+      <a href="../index.html">トップ</a>
+      / 写真帖
+    </nav>
+
+    <!-- ページの見出し -->
+    <div class="gallery-intro">
+      <h1>写真帖</h1>
+
+      <p class="gallery-en">
+        Photographic Album
+      </p>
+
+      <p>
+        天体、鉱物、自然など、
+        撮影したものを収めています。
+      </p>
+    </div>
+
+    <!-- 写真一覧 -->
+    <div class="gallery-grid">
+
+      <!-- ===== 1枚目：月面 ===== -->
+      <a class="gallery-item"
+         href="../images/gallery/astronomy/moon.webp">
+
+        <figure>
+          <img
+            src="../images/gallery/astronomy/moon.webp"
+            alt="月面の写真"
+            loading="lazy">
+
+          <figcaption>月面</figcaption>
+        </figure>
+
+      </a>
+
+
+      <!-- ===== 2枚目：辰砂 ===== -->
+      <a class="gallery-item"
+         href="../images/gallery/minerals/cinnabar.webp">
+
+        <figure>
+          <img
+            src="../images/gallery/minerals/cinnabar.webp"
+            alt="辰砂の標本写真"
+            loading="lazy">
+
+          <figcaption>辰砂</figcaption>
+        </figure>
+
+      </a>
+
+    </div>
+
+    <!-- ページの注意書き -->
+    <footer class="gallery-footer">
+      <p>
+        掲載写真の無断転載はご遠慮ください。
+        利用条件については各資料のライセンスをご確認ください。
+      </p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
+

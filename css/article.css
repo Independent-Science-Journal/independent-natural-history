@@ -25,14 +25,14 @@
 
 /* 英語タイトル */
 .article-subtitle {
-  color: #777;
+  color: var(--muted);
   font-size: 15px;
 }
 
 /* 公開日・分類など */
 .article-meta {
   font-size: 13px;
-  color: #777;
+  color: var(--muted);
   margin: 24px 0;
 }
 
@@ -44,7 +44,7 @@
 /* 章の見出し */
 .article-page h2 {
   font-size: 22px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--line);
   padding-bottom: 10px;
 }
 
@@ -73,7 +73,7 @@
 .article-table th,
 .article-table td {
   padding: 12px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--line);
   text-align: left;
 }
 

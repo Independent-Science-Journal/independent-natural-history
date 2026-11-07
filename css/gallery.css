@@ -35,15 +35,24 @@
 
 /* ===== 写真の一覧 ===== */
 
+
+/* ===== 写真の一覧 ===== */
 .gallery-grid {
   display: grid;
 
-  /* 画面幅に応じて列数を自動調整 */
-  grid-template-columns:
-    repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  /* 写真1枚の横幅を最大220pxにする */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(100%, 220px), 220px)
+  );
 
+  /* 写真同士の間隔 */
   gap: 24px;
+
+  /* 写真を左から並べる */
+  justify-content: start;
 }
+
 
 /* 写真1枚分 */
 .gallery-item {

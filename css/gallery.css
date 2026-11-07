@@ -1,1 +1,99 @@
 
+/* ===== 写真帖全体 ===== */
+
+.gallery-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+/* ===== タイトル部分 ===== */
+
+.gallery-intro {
+  margin-bottom: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.gallery-intro h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* 英語名 */
+.gallery-en {
+  color: var(--accent);
+  font-size: 14px;
+}
+
+/* ===== 写真の一覧 ===== */
+
+.gallery-grid {
+  display: grid;
+
+  /* 画面幅に応じて列数を自動調整 */
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+
+  gap: 24px;
+}
+
+/* 写真1枚分 */
+.gallery-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-item figure {
+  margin: 0;
+}
+
+/* 写真 */
+.gallery-item img {
+  display: block;
+  width: 100%;
+
+  /* 写真の比率を統一 */
+  aspect-ratio: 4 / 3;
+
+  /* 枠いっぱいに表示 */
+  object-fit: cover;
+
+  border-radius: 6px;
+  transition: opacity 0.2s;
+}
+
+/* 写真のタイトル */
+.gallery-item figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--ink);
+}
+
+/* マウスを乗せたとき */
+.gallery-item:hover img {
+  opacity: 0.8;
+}
+
+/* キーボード操作時 */
+.gallery-item:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* ページ下部 */
+.gallery-footer {
+  margin-top: 60px;
+  font-size: 12px;
+  color: var(--muted);
+}
+

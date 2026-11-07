@@ -106,3 +106,63 @@
   color: var(--muted);
 }
 
+/* ===== 写真一覧の大きさ ===== */
+
+.gallery-grid {
+  grid-template-columns: repeat(auto-fill, 220px);
+}
+
+/* 写真を押せるボタンにする */
+.gallery-item {
+  border: none;
+  background: none;
+  padding: 0;
+  width: 100%;
+  cursor: zoom-in;
+  font: inherit;
+}
+
+/* 一覧写真は必ず表示する */
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* ===== 拡大写真 ===== */
+
+.gallery-dialog {
+  width: min(92vw, 960px);
+  max-height: 90vh;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+/* 拡大時の暗い背景 */
+.gallery-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* 拡大写真の表示 */
+.gallery-dialog img {
+  display: block;
+  max-width: 100%;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+}
+
+/* 閉じるボタン */
+.gallery-close {
+  display: block;
+  margin: 0 0 12px auto;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+

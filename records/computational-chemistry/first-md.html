@@ -43,10 +43,28 @@
   <main class="article-page">
 
     <!-- トップへの案内 -->
-    <nav aria-label="現在位置">
-      <a href="../../index.html">トップ</a>
-      / 記録 / 計算化学
-    </nav>
+    
+<!-- ===== パンくずリスト ===== -->
+<nav class="breadcrumb" aria-label="現在位置">
+
+  <!-- トップページ -->
+  <a href="../../index.html">トップ</a>
+  /
+
+  <!-- 記録の一覧ページ -->
+  <a href="../index.html">記録</a>
+  /
+
+  <!-- 記録一覧の計算化学欄 -->
+  <a href="../index.html#computational">計算化学</a>
+  /
+
+  <!-- 現在の記事 -->
+  <span aria-current="page">
+    初めての分子動力学
+  </span>
+
+</nav>
 
     <article>
 

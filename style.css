@@ -85,7 +85,7 @@ body {
   font-size: 11px;
   /* 日本語名より小さくする */
 
-  color: #777;
+  color: var(--muted);  
   /* 控えめな灰色 */
 
   letter-spacing: 0.05em;

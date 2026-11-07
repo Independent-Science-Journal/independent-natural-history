@@ -1,1 +1,28 @@
 
+/* ===== トップページ専用CSS ===== */
+
+/* 写真スライドショーの表示領域 */
+.inh-hero {
+  position: relative;
+  width: 100%;
+  height: clamp(250px, 36vw, 480px);
+  overflow: hidden;
+  background: #e6ded0;
+}
+
+/* スライドショー内の各写真 */
+.inh-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+/* 表示対象の写真だけ見えるようにする */
+.inh-hero img.active {
+  opacity: 1;
+}
+

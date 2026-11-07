@@ -100,3 +100,38 @@
   }
 }
 
+
+/* ===== パンくずリスト ===== */
+
+/* 現在位置を示す道案内 */
+.article-page .breadcrumb {
+  display: flex;        /* 項目を横に並べる */
+  flex-wrap: wrap;      /* 幅が足りなければ折り返す */
+  align-items: center;
+  gap: 8px;             /* 項目同士の間隔 */
+
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+
+  margin-bottom: 28px;
+}
+
+/* 移動できる項目 */
+.article-page .breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* マウスを乗せたとき */
+.article-page .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* 現在開いているページ */
+.article-page .breadcrumb [aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+

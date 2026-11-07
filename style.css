@@ -94,28 +94,18 @@ body {
 }
 
 
+
 /* ===== メニュー内のリンク ===== */
-
 .site-nav a {
-  color: #444;
-  /* リンクの文字色 */
-
+  color: var(--ink);       /* 通常時の文字色 */
   font-size: 14px;
-  /* リンクの文字サイズ */
-
-  text-decoration: none;
-  /* リンクの下線を消す */
-
-  transition: color 0.2s;
-  /* 色の変化を0.2秒かけて滑らかに */
+  text-decoration: none;   /* 下線を消す */
+  transition: color 0.2s;  /* 色を滑らかに変える */
 }
 
-
 /* ===== マウスを乗せたとき ===== */
-
 .site-nav a:hover {
-  color: #a16c43;
-  /* 茶色に変化させる */
+  color: var(--accent);    /* 茶色に変化 */
 }
 
 

@@ -1,3 +1,12 @@
+:root {
+  --page-bg: #F8F5EE;
+  --surface: #FFFEFB;
+  --ink: #302B24;
+  --muted: #6A6257;
+  --accent: #776044;
+  --line: #E2D9CA;
+}
+
 body {
   /* ブラウザ標準の余白をなくす */
   margin: 0;
@@ -164,14 +173,7 @@ main section {
     /* メニュー間隔を狭くする */
   }
 }
-:root {
-  --page-bg: #F8F5EE;  /* 背景 */
-  --surface: #FFFEFB;  /* ヘッダー */
-  --ink: #302B24;      /* 文字 */
-  --muted: #6A6257;    /* 補助文字 */
-  --accent: #776044;   /* 強調色 */
-  --line: #E2D9CA;     /* 境界線 */
-}
+
 
 body{
   background: var(--page-bg);

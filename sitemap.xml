@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- トップページ -->
+  <url>
+    <loc>https://independent-science-journal.github.io/independent-natural-history/</loc>
+  </url>
+
+  <!-- 蒐集 -->
+  <url>
+    <loc>https://independent-science-journal.github.io/independent-natural-history/collections/</loc>
+  </url>
+
+  <!-- 記録 -->
+  <url>
+    <loc>https://independent-science-journal.github.io/independent-natural-history/records/</loc>
+  </url>
+
+  <!-- 装置 -->
+  <url>
+    <loc>https://independent-science-journal.github.io/independent-natural-history/instruments/</loc>
+  </url>
+
+  <!-- 写真帖 -->
+  <url>
+    <loc>https://independent-science-journal.github.io/independent-natural-history/gallery/</loc>
+  </url>
+
+  <!-- 第1号記事 -->
+  <url>
+    <loc>https://independent-science-journal.github.io/independent-natural-history/records/computational-chemistry/first-md.html</loc>
+  </url>
+
+</urlset>

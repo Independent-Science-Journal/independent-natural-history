@@ -75,48 +75,49 @@
   <p>大事なことなので、二度言いました。</p>
     </div>
 
-    <!-- 写真一覧 -->
-    <div class="gallery-grid">
-      
-<!-- ===== 拡大写真の表示画面 ===== -->
-<dialog id="kamaekazura-photo" class="gallery-dialog">
+    
+<!-- ===== 写真一覧 ===== -->
+<div class="gallery-grid">
 
-  <!-- 閉じるボタン -->
+  <!-- 1枚目：カマエカズラ -->
+  <button type="button" class="gallery-item">
+    <figure>
+      <img
+        src="../images/gallery/nature/IMG_7898.jpeg"
+        alt="カマエカズラ"
+        loading="lazy">
+
+      <figcaption>カマエカズラ</figcaption>
+    </figure>
+  </button>
+
+  <!-- 2枚目：弥生土器（画像名は仮） -->
+  <button type="button" class="gallery-item">
+    <figure>
+      <img
+        src="../images/gallery/history/yayoi-pottery.jpeg"
+        alt="弥生土器"
+        loading="lazy">
+
+      <figcaption>弥生土器</figcaption>
+    </figure>
+  </button>
+
+</div>
+
+<!-- ===== 全写真共通の拡大画面 ===== -->
+<dialog id="photo-dialog" class="gallery-dialog">
+
   <form method="dialog">
-    <button class="gallery-close" type="submit">
+    <button type="submit" class="gallery-close">
       × 閉じる
     </button>
   </form>
 
-  <!-- 拡大する写真 -->
-  <img
-    src="../images/gallery/nature/IMG_7898.jpeg"
-    alt="カマエカズラの拡大写真"
-  >
+  <!-- JavaScriptが写真をここへ読み込む -->
+  <img id="photo-dialog-image" alt="">
 
 </dialog>
-
-      
-
-<!-- ===== カマエカズラ ===== -->
-
-<!-- 一覧に表示する小さい写真 -->
-
-<!-- カマエカズラ：写真一覧 -->
-<button
-  type="button"
-  class="gallery-item"
-  data-gallery-dialog="kamaekazura-photo">
-
-  <figure>
-    <img
-      src="../images/gallery/nature/IMG_7898.jpeg"
-      alt="カマエカズラ">
-
-    <figcaption>カマエカズラ</figcaption>
-  </figure>
-
-</button>
 
 
 

@@ -75,6 +75,37 @@
   <p>大事なことなので、二度言いました。</p>
     </div>
 
+<!-- ===== 写真の絞り込み・検索 ===== -->
+<div class="gallery-controls">
+
+  <!-- ジャンル選択 -->
+  <label>
+    ジャンル
+    <select id="gallery-category">
+      <option value="all">すべて</option>
+      <option value="nature">自然</option>
+      <option value="minerals">鉱物</option>
+      <option value="history">歴史</option>
+      <option value="astronomy">天体</option>
+    </select>
+  </label>
+
+  <!-- キーワード検索 -->
+  <label>
+    写真を検索
+    <input
+      type="search"
+      id="gallery-search"
+      placeholder="名前・タグで検索">
+  </label>
+
+</div>
+
+<!-- 該当する写真がない場合 -->
+<p id="gallery-empty" hidden>
+  該当する写真はありません。
+</p>
+
     
 <!-- ===== 写真一覧 ===== -->
 <div class="gallery-grid">

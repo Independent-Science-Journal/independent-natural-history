@@ -166,8 +166,15 @@
   cursor: pointer;
 }
 
-/* ===== 検索・分類の操作欄 ===== */
 
+/* ===== 写真の検索・絞り込み ===== */
+
+/* 検索条件に合わない写真を非表示 */
+.gallery-item[hidden] {
+  display: none;
+}
+
+/* 検索欄とジャンル選択の配置 */
 .gallery-controls {
   display: flex;
   flex-wrap: wrap;
@@ -175,6 +182,7 @@
   margin-bottom: 28px;
 }
 
+/* 各入力欄 */
 .gallery-controls label {
   display: flex;
   flex-direction: column;
@@ -182,6 +190,7 @@
   font-size: 14px;
 }
 
+/* 入力欄の見た目 */
 .gallery-controls input,
 .gallery-controls select {
   padding: 10px 12px;
@@ -191,13 +200,3 @@
   color: var(--ink);
   font: inherit;
 }
-
-.gallery-controls input {
-  width: min(75vw, 300px);
-}
-
-/* 非表示になった写真を隠す */
-.gallery-item[hidden] {
-  display: none;
-}
-

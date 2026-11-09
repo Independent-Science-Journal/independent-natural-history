@@ -166,3 +166,38 @@
   cursor: pointer;
 }
 
+/* ===== 検索・分類の操作欄 ===== */
+
+.gallery-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.gallery-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.gallery-controls input,
+.gallery-controls select {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+.gallery-controls input {
+  width: min(75vw, 300px);
+}
+
+/* 非表示になった写真を隠す */
+.gallery-item[hidden] {
+  display: none;
+}
+

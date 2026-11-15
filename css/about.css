@@ -1,0 +1,202 @@
+
+/* ===== ABOUT INH ===== */
+
+.about-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 36px 28px 90px;
+}
+
+.about-page section {
+  min-height: 0;
+  scroll-margin-top: 160px;
+}
+
+.about-page p {
+  line-height: 2;
+}
+
+/* パンくず */
+.breadcrumb {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 42px;
+}
+
+/* ページ冒頭 */
+.about-intro {
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.about-en,
+.section-number,
+.entry-en {
+  color: var(--accent);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.about-intro h1 {
+  font-size: clamp(28px, 5vw, 38px);
+  margin: 10px 0 28px;
+}
+
+.about-slogan {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: 28px;
+}
+
+/* 目次 */
+.about-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 30px 0 60px;
+}
+
+.about-toc a {
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.about-toc a:hover {
+  background: #EEE6D8;
+}
+
+/* 各章 */
+.about-section {
+  margin-top: 60px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid var(--line);
+}
+
+.about-section h2 {
+  font-size: 26px;
+  margin: 10px 0 32px;
+}
+
+.about-section h3 {
+  font-size: 19px;
+  margin: 32px 0 12px;
+}
+
+.about-section p {
+  margin: 0 0 17px;
+}
+
+/* アイコンの由来 */
+.symbol-list {
+  margin: 30px 0;
+  border-top: 1px solid var(--line);
+}
+
+.symbol-item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.symbol-item h4 {
+  font-size: 16px;
+  margin: 0 0 9px;
+  color: var(--accent);
+}
+
+.symbol-item p {
+  margin: 0;
+}
+
+/* 5つの項目 */
+.about-entries {
+  margin-top: 32px;
+}
+
+.about-entry {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.about-entry .entry-en {
+  margin-bottom: 5px;
+}
+
+.about-entry h3 {
+  font-size: 23px;
+  margin: 0 0 18px;
+}
+
+.about-entry a {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* 運営理念の強調 */
+.about-emphasis {
+  padding: 16px 20px;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  font-weight: 600;
+}
+
+/* 終わり */
+.about-ending {
+  margin-top: 65px;
+  text-align: center;
+}
+
+.about-ending p {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+}
+
+.about-footer {
+  text-align: center;
+  padding: 30px 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* スマートフォン */
+@media (max-width: 700px) {
+
+  .about-page {
+    padding: 26px 20px 65px;
+  }
+
+  .about-intro h1 {
+    font-size: 29px;
+  }
+
+  .about-slogan {
+    font-size: 18px;
+  }
+
+  .about-section {
+    margin-top: 45px;
+  }
+
+  .about-section h2 {
+    font-size: 23px;
+  }
+
+  .about-toc {
+    gap: 8px;
+    margin-bottom: 45px;
+  }
+
+  .about-toc a {
+    padding: 7px 10px;
+  }
+
+}

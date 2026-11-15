@@ -200,3 +200,26 @@
   }
 
 }
+
+/* ===== INHアイコンの表示 ===== */
+
+.about-symbol-image {
+  margin: 30px auto 36px;
+  text-align: center;
+}
+
+.about-symbol-image img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.about-symbol-image figcaption {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}

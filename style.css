@@ -1,196 +1,122 @@
+
 :root {
+  /* ===== サイト共通カラー ===== */
   --page-bg: #F8F5EE;
   --surface: #FFFEFB;
   --ink: #302B24;
   --muted: #6A6257;
   --accent: #776044;
   --line: #E2D9CA;
+
+  /* ===== 共通レイアウト ===== */
+  --content-width: 1200px;
+  --content-padding: 28px;
 }
 
+/* ===== ページ全体 ===== */
 body {
-  /* ブラウザ標準の余白をなくす */
   margin: 0;
-
-  /* 日本語用のフォント */
+  background: var(--page-bg);
+  color: var(--ink);
   font-family: "Noto Sans JP", sans-serif;
 }
 
-
-/* ===== ヘッダー全体 ===== */
-
-
+/* ===== 共通ヘッダー ===== */
 .site-header {
-  position: sticky; /* スクロール時も固定 */
-  top: 0;           /* 画面上端に配置 */
-  z-index: 100;     /* 他の要素より手前 */
-
-  /* サイト共通の色を使用 */
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: var(--surface);
   border-bottom: 1px solid var(--line);
 }
 
-
-
-/* ===== ヘッダー内の配置 ===== */
-
 .header-inner {
-  max-width: 1200px;
-  /* 横幅の上限を1200pxにする */
-
+  max-width: var(--content-width);
   margin: auto;
-  /* 左右の余白を自動調整して中央寄せ */
-
-  padding: 18px 28px;
-  /* 内側の余白：上下18px、左右28px */
+  padding: 18px var(--content-padding);
 
   display: flex;
-  /* 中の要素を横並びにする */
-
   justify-content: space-between;
-  /* 要素を左右の端へ振り分ける */
-
   align-items: center;
-  /* 要素を縦方向の中央に揃える */
-
   gap: 24px;
-  /* 要素同士の間隔を最低24px確保 */
 }
-
 
 /* ===== サイト名 ===== */
-
 .site-brand {
   display: flex;
-  /* 内部の要素を並べる仕組み */
-
   flex-direction: column;
-  /* 横並びではなく縦並びにする */
-
   text-decoration: none;
-  /* リンクの下線を消す */
-
   color: inherit;
-  /* 親要素の文字色を引き継ぐ */
 }
-
-
-/* ===== 日本語のサイト名 ===== */
 
 .brand-ja {
   font-size: 23px;
-  /* 文字サイズ */
-
   font-weight: 600;
-  /* 文字の太さ。やや太字 */
-
   letter-spacing: 0.08em;
-  /* 文字同士の間隔を少し広くする */
 }
 
+.brand-en {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
 
-
-/* ===== メニュー ===== */
-
+/* ===== ナビゲーション ===== */
 .site-nav {
   display: flex;
-  /* メニューを横並びにする */
-
   gap: 28px;
-  /* メニュー項目同士の間隔 */
-
   flex-wrap: wrap;
-  /* 幅が足りなければ折り返す */
 }
 
-
-
-/* ===== メニュー内のリンク ===== */
 .site-nav a {
-  color: var(--ink);       /* 通常時の文字色 */
+  color: var(--ink);
   font-size: 14px;
-  text-decoration: none;   /* 下線を消す */
-  transition: color 0.2s;  /* 色を滑らかに変える */
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-/* ===== マウスを乗せたとき ===== */
 .site-nav a:hover {
-  color: var(--accent);    /* 茶色に変化 */
+  color: var(--accent);
 }
 
-
-/* ===== キーボード操作時 ===== */
-
+/* ===== キーボード操作 ===== */
 .site-nav a:focus-visible,
 .site-brand:focus-visible {
   outline: 2px solid #a16c43;
-  /* 選択中のリンクを枠線で示す */
-
   outline-offset: 4px;
-  /* 枠線を要素から4px離す */
 }
 
-
-/* ===== メイン部分（仮） ===== */
-
+/* ===== 共通メイン領域 ===== */
 main {
-  max-width: 1200px;
-  /* コンテンツの横幅上限 */
-
+  max-width: var(--content-width);
   margin: auto;
-  /* 中央寄せ */
-
-  padding: 40px 28px;
-  /* 内側の余白 */
+  padding: 40px var(--content-padding);
 }
 
+/* ページ内リンクの移動位置 */
 main section {
-  min-height: 200px;
-  /* 各セクションの最低の高さ */
-
   scroll-margin-top: 120px;
-  /* 移動先がヘッダーに隠れないよう余白を取る */
 }
 
-
-/* ===== スマートフォンへの対応 ===== */
-
-@media (max-width: 700px) {
-  /* 画面幅が700px以下のときだけ適用 */
-
-  .header-inner {
-    flex-direction: column;
-    /* 横並びを縦並びに変更 */
-
-    align-items: flex-start;
-    /* 左端に揃える */
-
-    padding: 14px 20px;
-    /* スマホ向けに余白を調整 */
-  }
-
-  .site-nav {
-    gap: 20px;
-    /* メニュー間隔を狭くする */
-  }
-}
-
-
-body{
-  background: var(--page-bg);
-  color: var(--ink);
-}
-
-
-
-/* ===== 英語のサイト名 ===== */
-.brand-en {
-  font-size: 11px;          /* 文字サイズ */
-  color: var(--muted);     /* 補助文字色 */
-  letter-spacing: 0.05em;  /* 文字同士の間隔 */
-}
-
-
+/* ===== 共通リンク ===== */
 main a {
   color: var(--accent);
 }
 
+/* ===== スマートフォン対応 ===== */
+@media (max-width: 700px) {
+  :root {
+    --content-padding: 20px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .site-nav {
+    gap: 20px;
+  }
+}

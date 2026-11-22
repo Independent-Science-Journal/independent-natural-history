@@ -1,0 +1,121 @@
+
+/* ========================================
+   私設博物誌 - 蒐集ページ専用CSS
+======================================== */
+
+/* 分野別ナビゲーション */
+.topic-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 36px;
+}
+
+.topic-links a {
+  display: inline-block;
+  padding: 8px 16px;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--surface);
+  transition: background 0.2s, color 0.2s;
+}
+
+.topic-links a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* 分類セクション */
+.catalog-section {
+  margin: 48px 0;
+  scroll-margin-top: 30px;
+}
+
+.catalog-section h2 {
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+/* コレクション一覧 */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* コレクションカード */
+.collection-card {
+  display: block;
+  overflow: hidden;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.collection-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 16px rgba(48, 43, 36, 0.10);
+}
+
+/* カード画像 */
+.collection-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  object-fit: contain;
+  background: #F3F0E9;
+}
+
+/* カード内の文章 */
+.collection-card-info {
+  padding: 16px;
+}
+
+.collection-card-info h3 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.collection-card-info p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* スマートフォン */
+@media (max-width: 600px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .collection-card img {
+    height: 150px;
+  }
+
+  .collection-card-info {
+    padding: 12px;
+  }
+
+  .collection-card-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .collection-card-info p {
+    font-size: 0.8rem;
+  }
+}

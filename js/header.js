@@ -29,7 +29,7 @@
 
     // HTMLを挿入
     const html = await response.text();
-    headerArea.innerHTML = html;
+    headerArea.outerHTML = html;
 
   } catch (error) {
     console.error("共通ヘッダーの読み込みエラー:", error);

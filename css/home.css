@@ -1,28 +1,117 @@
 
 /* ===== トップページ専用CSS ===== */
 
-/* 写真スライドショーの表示領域 */
+/* ===== メインビジュアル ===== */
 .inh-hero {
   position: relative;
   width: 100%;
-  height: clamp(250px, 36vw, 480px);
+  height: clamp(260px, 30vw, 400px);
   overflow: hidden;
-  background: #e6ded0;
+  background: #171511;
 }
 
-/* スライドショー内の各写真 */
 .inh-hero img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
 }
 
-/* 表示対象の写真だけ見えるようにする */
 .inh-hero img.active {
   opacity: 1;
 }
 
+/* ===== 案内セクション全体 ===== */
+#app {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* ===== 各案内パネル ===== */
+#app > section {
+  box-sizing: border-box;
+  min-height: 210px;
+  padding: 30px 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+}
+
+/* ===== 見出し ===== */
+#app > section h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+/* ===== 説明文 ===== */
+#app > section p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* ===== 案内リンク ===== */
+#app > section a {
+  display: inline-block;
+  margin-top: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 3px;
+  transition: opacity 0.2s;
+}
+
+#app > section a:hover {
+  opacity: 0.65;
+}
+
+/* ===== おみやげ ===== */
+#souvenirs {
+  grid-column: 1 / -1;
+  min-height: 150px;
+  border-top-style: dashed !important;
+}
+
+#souvenirs span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ===== タブレット・スマートフォン ===== */
+@media (max-width: 700px) {
+  #app {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  #app > section {
+    min-height: 180px;
+    padding: 24px;
+  }
+
+  #app > section h2 {
+    font-size: 21px;
+  }
+
+  #souvenirs {
+    grid-column: auto;
+  }
+
+  .inh-hero {
+    height: 280px;
+  }
+}

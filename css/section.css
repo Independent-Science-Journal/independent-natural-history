@@ -171,3 +171,12 @@ a.record-card:focus-visible {
     font-size: 30px;
   }
 }
+
+/* 蒐集品カードの画像サイズ */
+.collection-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+}

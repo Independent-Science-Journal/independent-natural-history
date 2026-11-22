@@ -1,38 +1,31 @@
-
-// 共通ヘッダーを読み込む
 (async function () {
+  const script = document.currentScript;
 
-  // このスクリプト自身の場所を基準にする
-  const scriptUrl = document.currentScript.src;
-
-  // components/header.html の場所を取得
   const headerUrl = new URL(
     "../components/header.html",
-    scriptUrl
+    script.src
   );
 
-  // ヘッダーの挿入先
   const headerArea = document.getElementById("site-header");
 
   if (!headerArea) {
-    console.error("ヘッダーの挿入先が見つかりません。");
+    console.error("ヘッダーの挿入先が見つかりません");
     return;
   }
 
   try {
-    // HTMLを取得
     const response = await fetch(headerUrl);
 
     if (!response.ok) {
-      throw new Error("ヘッダーを読み込めませんでした。");
+      throw new Error("ヘッダーの読み込みに失敗しました");
     }
 
-    // HTMLを挿入
     const html = await response.text();
+
+    // 挿入用divを取り除き、ヘッダー本体に置き換える
     headerArea.outerHTML = html;
 
   } catch (error) {
-    console.error("共通ヘッダーの読み込みエラー:", error);
+    console.error(error);
   }
-
 })();

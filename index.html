@@ -1,86 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- サイト名 -->
-<title>私設博物誌 | Independent Natural History</title>
+  <!-- サイト情報 -->
+  <title>私設博物誌 | Independent Natural History</title>
 
- 
-<link rel="icon" type="image/png" href="/independent-natural-history/images/IMG_1352.png">
+  <meta name="description"
+        content="私設博物誌は、個人による科学研究、実験記録、自作装置、鉱物標本、歴史資料などを収集・整理し、公開する独立したアーカイブです。">
 
-
-<!-- 検索エンジン向けのサイト説明 -->
-<meta name="description"
-      content="私設博物誌は、個人による科学研究、実験記録、自作装置、鉱物標本、歴史資料などを収集・整理し、公開する独立したアーカイブです。">
+  <link rel="icon" type="image/png"
+        href="/independent-natural-history/images/IMG_1352.png">
 
   <!-- デザイン -->
   <link rel="stylesheet" href="./style.css">
-
   <link rel="stylesheet" href="./css/home.css">
 
-  <!-- サイトの情報と動作 -->
+  <!-- JavaScript -->
   <script src="js/app.js" defer></script>
-　<!-- 共通ヘッダー -->
-　<div id="site-header"></div>
+  <script src="js/header.js" defer></script>
+</head>
 
-　<script src="js/header.js" defer></script>
+<body>
 
- 
-  
-<section class="inh-hero">
-  <img src="./images/top/hero1.jpg" class="active" alt="写真1">
-  <img src="./images/top/IMG_1539.jpeg" alt="写真2">
-  <img src="./images/top/IMG_2410.jpeg" alt="写真3">
-  <img src="./images/top/10.jpeg" alt="写真3">
-</section>
+  <!-- 共通ヘッダー -->
+  <div id="site-header"></div>
 
-
+  <!-- メインビジュアル -->
+  <section class="inh-hero">
+    <img src="./images/top/hero1.jpg" class="active" alt="メイン写真">
+    <img src="./images/top/IMG_1539.jpeg" alt="写真">
+    <img src="./images/top/IMG_2410.jpeg" alt="写真">
+    <img src="./images/top/10.jpeg" alt="写真">
+  </section>
 
   <main id="app">
+
+    <!-- 蒐集 -->
     <section id="collections">
       <h2>蒐集 / collections</h2>
       <p>蒐集したものを後悔しています</p>
-
       <a href="collections/">蒐集物を見る →</a>
-      
     </section>
 
+    <!-- 記録 -->
     <section id="records">
       <h2>記録 / records</h2>
       <p>実験 観察　調査　計算などの記録を公開しています</p>
-　　　　<a href="records/">記録を見る →</a>
-   
+      <a href="records/">記録を見る →</a>
     </section>
 
+    <!-- 装置 -->
     <section id="instruments">
       <h2>装置 / instruments</h2>
       <p>自作装置の設計、設計過程、実験結果公開しています。</p>
       <a href="instruments/">装置を見る →</a>
-
     </section>
-    
-<!-- ===== 写真帖 ===== -->
-<section id="gallery">
 
-  <h2>写真帖 / Photographic Album</h2>
+    <!-- 写真帖 -->
+    <section id="gallery">
+      <h2>写真帖 / Photographic Album</h2>
+      <p>
+        天体、鉱物、自然など、
+        撮影した写真を収めています。
+      </p>
+      <a href="gallery/">写真帖を見る →</a>
+    </section>
 
-  <p>
-    天体、鉱物、自然など、
-    撮影した写真を収めています。
-  </p>
-
-  <!-- 写真帖のページへ移動 -->
-  <a href="gallery/">
-    写真帖を見る →
-  </a>
-
-</section>
-
-
+    <!-- おみやげ -->
     <section id="souvenirs">
       <h2>おみやげ / souvenirs</h2>
       <p>個人で制作したハンドメイド品などを紹介、販売しています</p>
@@ -88,8 +78,8 @@
     </section>
 
   </main>
+
   <footer>館主:微粒 界</footer>
- 
- 
+
 </body>
 </html>

@@ -100,7 +100,6 @@
   }
 }
 
-
 /* ===== パンくずリスト ===== */
 
 /* 現在位置を示す道案内 */
@@ -132,6 +131,18 @@
 .article-page .breadcrumb [aria-current="page"] {
   color: var(--ink);
   font-weight: 600;
+}
+
+/* ===== 記事内の画像 ===== */
+
+.article-page .article-image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 24px auto;
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 
